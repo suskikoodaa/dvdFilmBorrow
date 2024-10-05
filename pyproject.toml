@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "dvdfilmborrow"
+version = "0.1.0"
+description = ""
+authors = ["suskikoodaa <101000884+suskikoodaa@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "*"
+uvicorn = "*"
+motor = "*"
+pydantic = "*"
+reflex = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+httpx = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start-backend = "dvdfilmborrow.app.run_server:main"
